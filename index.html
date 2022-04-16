@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <div class="flex-container">
+        <form action="">
+            <div class="flex-container">
+                <div class="col-md-6">
+                    <label for="">FirstName:</label>
+                    <input type="text" class="form-input" name="firstname" placeholder="Please enter" id="firstname">
+                    <p class="error" id="firstname_error"></p>
+                </div>
+                <div class="col-md-6">
+                    <label for="">LastName:</label>
+                    <input type="text" class="form-input" name="lastname" placeholder="Please enter" id="lastname">
+                    <p class="error" id="lastname_error"></p>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="col-md-6">
+                    <label for="">Address:</label>
+                    <input type="text" class="form-input" name="address" placeholder="Please enter" id="address">
+                    <p class="error" id="address_error"></p>
+                </div>
+                <div class="col-md-6">
+                    <label for="">Pincode:</label>
+                    <input type="text" class="form-input" name="pincode" placeholder="Please enter" id="pincode">
+                    <p class="error" id="pincode_error"></p>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="col-md-6">
+                    <label for="">Gender:</label>
+                    <select name="gender" class="form-input" id="gender">
+                        <option value="Please select">Please select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="others">Others</option>
+                    </select>
+                    <p class="error" id="gender_error"></p>
+                </div>
+                <div class="col-md-6">
+                    <label for="">Choice of food:</label>
+                    <div class="flex-container" style="justify-content: start;">
+                        <div class="checkbox-items">
+                            <label for=""><input type="checkbox" class="form-input form-checkbox" name="briyani" value="briyani" id="briyani"> Briyani</label>
+                        </div>
+                        <div class="checkbox-items">
+                            <label for=""><input type="checkbox" class="form-input form-checkbox" name="vegmeals" value="vegmeals" id="vegmeals"> VegMeals</label>
+                        </div>
+                        <div class="checkbox-items">
+                            <label for=""><input type="checkbox" class="form-input form-checkbox" name="nonvegmeals" value="nonvegmeals" id="nonvegmeals"> NonMeals</label>
+                        </div>
+                        <div class="checkbox-items">
+                            <label for=""><input type="checkbox" class="form-input form-checkbox" name="noodels" value="noodels" id="noodels"> Noodels</label>
+                        </div>
+                        <div class="checkbox-items">
+                            <label for=""><input type="checkbox" class="form-input form-checkbox" name="burger" value="burger" id="burger"> Burger</label>
+                        </div>                    
+                    </div>
+                    <p class="error" id="food_error"></p>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="col-md-6">
+                    <label for="">State:</label>
+                    <select name="state" class="form-input" id="state">
+                        <option value="Please select">Please select</option>
+                        <option value="Tamilnadu">Tamilnadu</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Karnataka"></option>
+                    </select>
+                    <p class="error" id="state_error"></p>
+                </div>
+                <div class="col-md-6">
+                    <label for="">Country:</label>
+                    <select name="country" class="form-input" id="country">
+                        <option value="Please select">Please select</option>
+                        <option value="India">India</option>
+                        <option value="USA">America</option>
+                        <option value="UK">London</option>
+                    </select>
+                    <p class="error" id="country_error"></p>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="col-md-12">
+                    <button type="button" class="submit" id="submit">Submit</button>
+                </div>            
+            </div>
+        </form>    
+    </div>
+    <br>
+    <div class="flex-container" >
+        <table id="table_id" class="table">
+            <thead>
+                <tr>          
+                    <th>FirsttName</th>
+                    <th>LastName</th>
+                    <th>Address</th>
+                    <th>Pincode</th>
+                    <th>Gender</th>
+                    <th>Food</th>
+                    <th>State</th>
+                    <th>Country</th>
+                </tr>
+            </thead>
+            <tbody id="tb_body">
+                <tr id="nodata" class="dispnone">
+                    <td colspan="8"><p>No Data Found</p></td>
+                </tr>            
+            </tbody>          
+        </table>
+    </div>
+    
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+body{
+    text-align: center;
+}
+form{
+    display: inline-block;
+    width: 80%;
+}
+.flex-container{
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+  
+}
+.flex-container .col-md-6 {
+    margin: 5px;
+    padding: 10px;
+    width: 100%;
+}
+.col-md-6 label{
+    display: flex;
+}
+input, select{
+    width: 100%;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.checkbox-group{
+    display: inline-block;
+}
+.checkbox-group input{
+    display: inline-block;
+    width: 10%;
+}
+.form-input{   
+   width: 100%;
+   padding: 5px;
+}
+.form-checkbox{
+    width: auto;
+}
+.flex-container-chkbox{
+    justify-content: start;
+}
+.checkbox-items{
+    padding: 10px;
+}
+.submit{
+    padding: 10px;
+    background: ivory;
+    border: 1px solid #cdcbcb;
+}
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table th,td{
+    border: 1px solid black;   
+}
+.error{
+    color: red;
+}
+.dispnone{
+    display: none;
+}
